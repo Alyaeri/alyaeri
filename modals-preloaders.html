@@ -1,0 +1,95 @@
+	<div class="modal fade" id="modal-preloader1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-long" role="document">
+              <div class="modal-content">
+<ul class="nav nav-tabs-minimal" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#tab-code">Code</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-scss">SCSS</a>
+                </li>
+				
+				    <button type="button" class="close " style="margin-left: auto; margin-right: 15px;" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </ul>
+                <div class="modal-body">                             
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-code">
+				<code>
+				<pre>
+ &#60;div class="line-scale"&#62;
+        &#60;div&#62; &#60;/div&#62;
+        &#60;div&#62; &#60;/div&#62;
+        &#60;div&#62; &#60;/div&#62;
+        &#60;div&#62; &#60;/div&#62;
+    &#60;/div&#62;
+	</pre>
+	</code>
+				</div>
+                <div class="tab-pane fade" id="tab-scss">
+				<pre>
+.line-scale > div {
+  width: 6px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+@-webkit-keyframes line-scale {
+  0%{
+	-webkit-transform: scaley(1);
+	transform: scaley(1)
+  }
+
+  100% {
+	-webkit-transform: scaley(0);
+	transform: scaley(0)
+  }
+}
+
+@keyframes line-scale {
+  0%{
+	-webkit-transform: scaley(1);
+	transform: scaley(1)
+  }
+  100% {
+	-webkit-transform: scaley(0);
+	transform: scaley(0)
+  }
+}
+
+.line-scale > div:nth-child(1) {
+  -webkit-animation: line-scale 1s -.4s infinite cubic-bezier(.2, .68, .18, 1.08);
+  animation: line-scale 1s -.4s infinite cubic-bezier(.2, .68, .18, 1.08)
+}
+
+.line-scale > div:nth-child(2) {
+  -webkit-animation: line-scale 1s -.3s infinite cubic-bezier(.2, .68, .18, 1.08);
+  animation: line-scale 1s -.3s infinite cubic-bezier(.2, .68, .18, 1.08)
+}
+
+.line-scale > div:nth-child(3) {
+  -webkit-animation: line-scale 1s -.2s infinite cubic-bezier(.2, .68, .18, 1.08);
+  animation: line-scale 1s -.2s infinite cubic-bezier(.2, .68, .18, 1.08)
+}
+
+.line-scale > div:nth-child(4) {
+  -webkit-animation: line-scale 1s -.1s infinite cubic-bezier(.2, .68, .18, 1.08);
+  animation: line-scale 1s -.1s infinite cubic-bezier(.2, .68, .18, 1.08)
+}
+
+.line-scale > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+				</pre>
+				</div>
+              </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
