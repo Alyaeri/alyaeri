@@ -20,9 +20,15 @@
 	
 	  <script> 
     $(function(){
+	      $("#loadNav").load("nav.html"); 
+      $("#loadFooter").load("footer.html"); 
       $("#loadModals").load("modals.html"); 
 	  
-	  console.log('loaded');
+	  $("#previewTactivSignage").load("preview-tactiv-signage.html");  
+	$("#previewEnquireManagementPortal").load("preview-enquire-management-portal.html"); 
+	$("#previewPersonalIdentity").load("preview-personal-identity.html"); 
+	$("#previewOversiWebsite").load("preview-oversi-website.html"); 
+	 
     });
 
     </script>  
@@ -32,43 +38,16 @@
   <body>
 
 
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-      <div class="container">
-
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
-          </a>
-        </div>
-
-        <section class="navbar-right">
-          <ul class="nav nav-navbar">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#section-about">Bio</a>
-            </li>
-				<li class="nav-item">
-              <a class="nav-link" href="index.html#section-services">Services</a>
-            </li>
-	<li class="nav-item">
-              <a class="nav-link" href="index.html#section-portfolio">Portfolio</a>
-            </li>			
-				<li class="nav-item">
-              <a class="nav-link" href="index.html#section-get-in-touch">Get In Touch</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </nav><!-- /.navbar -->
-
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky" id="loadNav">
+	  </nav>
 
 
     <!-- Header -->
-    <header class="header text-center" style="background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);">
+        <header class="header text-center" style="background-image: linear-gradient(120deg, #fafbfb 0%, #e4e5e6 100%);">
       <div class="container">
-          <h1 class="display-4">Enquire Branding</h1>
+	  <br>
+          <h1 class="text-dark display-4">Enquire Branding</h1>
+		  <br>
       </div>
     </header><!-- /.header -->
 
@@ -82,31 +61,31 @@
           <div class="row">
             <div class="col-12 col-md-8">
                <div class="gallery gallery-4-type4" data-provide="photoswipe">
-                <a class="gallery-item" href="assets/img/portfolio/enquire-branding/1.png">
-                  <img src="assets/img/portfolio/enquire-branding/1.png" alt="...">
+                <a class="gallery-item" href="assets/img/enquire-branding/1.png">
+                  <img src="assets/img/enquire-branding/1.png" alt="...">
                 </a>
                 <div class="gallery gallery-3-type1">
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/2.png">
-                    <img src="assets/img/portfolio/enquire-branding/2.png" alt="...">
+                  <a class="gallery-item" href="assets/img/enquire-branding/2.png">
+                    <img src="assets/img/enquire-branding/2.png" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/3.png">
-                    <img src="assets/img/portfolio/enquire-branding/3.png" alt="...">
+                  <a class="gallery-item" href="assets/img/enquire-branding/3.png">
+                    <img src="assets/img/enquire-branding/3.png" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/4.png">
+                  <a class="gallery-item" href="assets/img/enquire-branding/4.png">
                     <div class="gallery-item-overlay">+3</div>
-                    <img src="assets/img/portfolio/enquire-branding/4.png" alt="...">
+                    <img src="assets/img/enquire-branding/4.png" alt="...">
                   </a>
                 </div>
 
                 <div class="gallery-extra-items">
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/5.png">
-                    <img src="assets/img/portfolio/enquire-branding/5.png" alt="...">
+                  <a class="gallery-item" href="assets/img/enquire-branding/5.png">
+                    <img src="assets/img/enquire-branding/5.png" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/6.png">
-                    <img src="assets/img/portfolio/enquire-branding/6.png" alt="...">
+                  <a class="gallery-item" href="assets/img/enquire-branding/6.png">
+                    <img src="assets/img/enquire-branding/6.png" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/enquire-branding/7.png">
-                    <img src="assets/img/portfolio/enquire-branding/7.png" alt="...">
+                  <a class="gallery-item" href="assets/img/enquire-branding/7.png">
+                    <img src="assets/img/enquire-branding/7.png" alt="...">
                   </a>
                 </div>
               </div>
@@ -167,48 +146,13 @@
 
           <div class="row gap-y gap-2">
 
-         <div class="col-6 col-lg-3">
-       <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-oversi-website">
-                  <img class="card-img-top" src="assets/img/portfolio/oversi-website/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Oversi Website</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Websites</small>
-                  </div>
-                </a>
-            </div>
+			<div class="col-6 col-lg-3" id="previewTactivSignage"></div>
 
+            <div class="col-6 col-lg-3" id="previewEnquireManagementPortal"></div>
 
-            <div class="col-6 col-lg-3">
-       <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/1.jpg" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Phone Bag</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Bag, Box</small>
-                  </div>
-                </a>
-            </div>
+            <div class="col-6 col-lg-3" id="previewPersonalIdentity"></div>
 
-
-            <div class="col-6 col-lg-3">
-              <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/1.jpg" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Phone Bag</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Bag, Box</small>
-                  </div>
-                </a>
-            </div>
-
-
-            <div class="col-6 col-lg-3">
-             <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/1.jpg" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Phone Bag</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Bag, Box</small>
-                  </div>
-                </a>
-            </div>
+            <div class="col-6 col-lg-3"id="previewOversiWebsite"></div>
 
           </div>
 
@@ -219,27 +163,8 @@
     </main><!-- /.main-content -->
 
 
-            <!-- Footer -->
-         <footer class="footer">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-
-            <div class="col-md-6 text-center text-md-left">
-              <small>© TheThemeio 2018, All rights reserved.</small>
-            </div>
-
-            <div class="col-md-6 text-center text-md-right">
-              <div class="social">
-                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </footer><!-- /.footer -->
+  <footer class="footer" id="loadFooter">
+</footer>
 	  
 
 

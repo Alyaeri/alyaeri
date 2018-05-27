@@ -27,9 +27,23 @@
 	
 	  <script> 
     $(function(){
+      $("#loadNav").load("nav.html"); 
+      $("#loadFooter").load("footer.html"); 
       $("#loadModals").load("modals.html"); 
-	  
-	  console.log('loaded');
+	
+      $("#previewAndroidReimagined").load("preview-android-reimagined.html"); 
+      $("#previewDailyUi").load("preview-daily-ui.html"); 
+      $("#previewEnquireAdminConsole").load("preview-enquire-admin-console.html"); 
+	  $("#previewEnquireBranding").load("preview-enquire-branding.html"); 
+      $("#previewEnquireClientPortal").load("preview-enquire-client-portal.html"); 
+      $("#previewEnquireManagementPortal").load("preview-enquire-management-portal.html"); 
+      $("#previewFreebies").load("preview-freebies.html"); 
+   $("#previewInteractionExploration").load("preview-interaction-exploration.html");
+      $("#previewOversiWebsite").load("preview-oversi-website.html"); 
+      $("#previewOversiWebApp").load("preview-oversi-web-app.html"); 
+	  $("#previewPersonalIdentity").load("preview-personal-identity.html"); 
+      $("#previewTactivSignage").load("preview-tactiv-signage.html");       
+
     });
 
     </script> 
@@ -37,38 +51,9 @@
   </head>
 
   <body>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky" id="loadNav">
+	  </nav>
 
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-      <div class="container">
-
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
-          </a>
-        </div>
-
-        <section class="navbar-right">
-          <ul class="nav nav-navbar">
-            <li class="nav-item">
-              <a class="nav-link" href="#section-about">Bio</a>
-            </li>
-				<li class="nav-item">
-              <a class="nav-link" href="#section-services">Services</a>
-            </li>
-	<li class="nav-item">
-              <a class="nav-link" href="#section-portfolio">Portfolio</a>
-            </li>			
-				<li class="nav-item">
-              <a class="nav-link" href="#section-get-in-touch">Get In Touch</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </nav><!-- /.navbar -->
 
 
     <!-- Header -->
@@ -216,124 +201,53 @@
 
             <div class="row gap-y gap-2" data-shuffle="list">
 			
-			   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="websites">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-oversi-website">
-                  <img class="card-img-top" src="assets/img/oversi-website/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Oversi Website</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Websites</small>
-                  </div>
-                </a>
+			        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes" id="previewAndroidReimagined">
+        
               </div>
 			  
-			   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-oversi-web-app">
-                  <img class="card-img-top" src="assets/img/oversi-web-app/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Oversi Web App</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Web Apps</small>
-                  </div>
-                </a>
+			  	  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes"  id="previewDailyUi">
+               
+              </div>
+			  
+			    <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps"  id="previewEnquireAdminConsole">
+             
+              </div>
+			
+				  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="branding" id="previewEnquireBranding">
+                
+              </div>
+			  
+			  	  
+			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps"  id="previewEnquireClientPortal">
+               
+              </div>
+			  
+			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps"  id="previewEnquireManagementPortal">
+               
+              </div>
+			  
+			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes"  id="previewFreebies">
+               
+              </div>
+			  
+			    <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes"  id="previewInteractionExploration">
+                
+              </div>
+			  
+			   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="websites" id="previewOversiWebsite">
+               
+              </div>
+			  
+			   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps"  id="previewOversiWebApp">
+     
               </div>
 
-              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-android-reimagined">
-                  <img class="card-img-top" src="assets/img/android-reimagined/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Android Reimagined</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Prototypes</small>
-                  </div>
-                </a>
+			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="branding" id="previewPersonalIdentity">
+              
               </div>
 			  
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="branding">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-personal-identity">
-                  <img class="card-img-top" src="assets/img/personal-identity/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Personal Identity</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Branding</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  		   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-freebies">
-                  <img class="card-img-top" src="assets/img/freebies/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Freebies</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Prototypes</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  	  		   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-daily-ui">
-                  <img class="card-img-top" src="assets/img/daily-ui/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Daily UI</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Prototypes</small>
-                  </div>
-                </a>
-              </div>
-			  
-			   <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-enquire-management-portal">
-                  <img class="card-img-top" src="assets/img/enquire-management-portal/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Enquire Management Portal</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Web Apps</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-enquire-client-portal">
-                  <img class="card-img-top" src="assets/img/enquire-client-portal/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Enquire Client Portal</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Web Apps</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="web-apps">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-enquire-admin-console">
-                  <img class="card-img-top" src="assets/img/enquire-admin-console/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Enquire Admin Console</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Web Apps</small>
-                  </div>
-                </a>
-              </div>
-
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="branding">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-enquire-branding">
-                  <img class="card-img-top" src="assets/img/enquire-branding/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Enquire Branding</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Branding</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="prototypes">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-interaction-exploration">
-                  <img class="card-img-top" src="assets/img/interaction-exploration/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Interaction Exploration</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Prototypes</small>
-                  </div>
-                </a>
-              </div>
-			  
-			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="banding">
-                <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-tactiv-signage">
-                  <img class="card-img-top" src="assets/img/tactiv-signage/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Tactiv Signage</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Branding</small>
-                  </div>
-                </a>
+			  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="banding"  id="previewTactivSignage">
+              
               </div>
 
 
@@ -362,20 +276,9 @@
         </div>
       </section>     
     </main>
-
-
-    <!-- Footer -->
-         <footer class="footer">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-
-            <div class="col text-center">
-              <small>© Rachelle Patman 2018</small>
-            </div>
-
-          </div>
-        </div>
-      </footer><!-- /.footer -->
+	
+   <footer class="footer" id="loadFooter">
+</footer>
 
 
     <!-- Scripts -->

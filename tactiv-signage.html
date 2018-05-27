@@ -16,46 +16,36 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/favicon.png">
   </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	  <script> 
+    $(function(){
+	  $("#loadNav").load("nav.html"); 
+      $("#loadFooter").load("footer.html"); 
+      $("#loadModals").load("modals.html"); 
+      $("#previewEnquireBranding").load("preview-enquire-branding.html"); 
+	$("#previewOversiWebsite").load("preview-oversi-website.html"); 
+	$("#previewPersonalIdentity").load("preview-personal-identity.html"); 
+	 $("#previewDailyUi").load("preview-daily-ui.html"); 
+	 
+    });
+
+    </script> 
 
   <body>
 	
 	
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-      <div class="container">
-
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
-          </a>
-        </div>
-
-        <section class="navbar-right">
-          <ul class="nav nav-navbar">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#section-about">Bio</a>
-            </li>
-				<li class="nav-item">
-              <a class="nav-link" href="index.html#section-services">Services</a>
-            </li>
-	<li class="nav-item">
-              <a class="nav-link" href="index.html#section-portfolio">Portfolio</a>
-            </li>			
-				<li class="nav-item">
-              <a class="nav-link" href="index.html#section-get-in-touch">Get In Touch</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </nav><!-- /.navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky" id="loadNav">
+	  </nav>
+	  
 
 
     <!-- Header -->
-    <header class="header text-center" style="background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);">
+    <header class="header text-center" style="background-image: linear-gradient(120deg, #fafbfb 0%, #e4e5e6 100%);">
       <div class="container">
-          <h1 class="display-4">Tactiv Signage</h1>
+	  <br>
+          <h1 class="text-dark display-4">Tactiv Signage</h1>
+		  <br>
       </div>
     </header><!-- /.header -->
 
@@ -69,31 +59,31 @@
           <div class="row">
             <div class="col-12 col-md-8">
                <div class="gallery gallery-4-type4" data-provide="photoswipe">
-                <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/1.jpg">
-                  <img src="assets/img/portfolio/tactiv-signage/1.jpg" alt="...">
+                <a class="gallery-item" href="assets/img/tactiv-signage/1.jpg">
+                  <img src="assets/img/tactiv-signage/1.jpg" alt="...">
                 </a>
                 <div class="gallery gallery-3-type1">
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/2.jpg">
-                    <img src="assets/img/portfolio/tactiv-signage/2.jpg" alt="...">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/2.jpg">
+                    <img src="assets/img/tactiv-signage/2.jpg" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/3.jpg">
-                    <img src="assets/img/portfolio/tactiv-signage/3.jpg" alt="...">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/3.jpg">
+                    <img src="assets/img/tactiv-signage/3.jpg" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/4.jpg">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/4.jpg">
                     <div class="gallery-item-overlay">+3</div>
-                    <img src="assets/img/portfolio/tactiv-signage/4.jpg" alt="...">
+                    <img src="assets/img/tactiv-signage/4.jpg" alt="...">
                   </a>
                 </div>
 
                 <div class="gallery-extra-items">
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/5.jpg">
-                    <img src="assets/img/portfolio/tactiv-signage/5.jpg" alt="...">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/5.jpg">
+                    <img src="assets/img/tactiv-signage/5.jpg" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/6.jpg">
-                    <img src="assets/img/portfolio/tactiv-signage/6.jpg" alt="...">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/6.jpg">
+                    <img src="assets/img/tactiv-signage/6.jpg" alt="...">
                   </a>
-                  <a class="gallery-item" href="assets/img/portfolio/tactiv-signage/7.jpg">
-                    <img src="assets/img/portfolio/tactiv-signage/7.jpg" alt="...">
+                  <a class="gallery-item" href="assets/img/tactiv-signage/7.jpg">
+                    <img src="assets/img/tactiv-signage/7.jpg" alt="...">
                   </a>
                 </div>
               </div>
@@ -147,49 +137,13 @@
 
           <div class="row gap-y gap-2">
 
-            <div class="col-6 col-lg-3">
-              <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/enquire-branding/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Enqurie Branding</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Branding</small>
-                  </div>
-                </a>
-            </div>
+            <div class="col-6 col-lg-3" id="previewEnquireBranding"></div>
 
-			<div class="col-6 col-lg-3">
-              <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/personal-identity/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Personal Identity</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Branding</small>
-                  </div>
-                </a>
-            </div>
+			<div class="col-6 col-lg-3"  id="previewPersonalIdentity"></div>
 
-            <div class="col-6 col-lg-3">
-       <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/oversi-website/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Oversi Website</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Websites</small>
-                  </div>
-                </a>
-            </div>
+            <div class="col-6 col-lg-3"  id="previewOversiWebsite"></div>
 
-
-            
-
-
-            <div class="col-6 col-lg-3">
-             <a class="card shadow-1 hover-shadow-6" href="#" data-toggle="modal" data-target="#modal-portfolio">
-                  <img class="card-img-top" src="assets/img/portfolio/daily-ui/preview.png" alt="screenshot">
-                  <div class="card-body">
-                    <h6 class="fw-500 mb-0">Daily UI</h6>
-                    <small class="small-5 text-lightest text-uppercase ls-2">Prototypes</small>
-                  </div>
-                </a>
-            </div>
+            <div class="col-6 col-lg-3"  id="previewDailyUi"></div>
 
           </div>
 
@@ -200,32 +154,17 @@
     </main><!-- /.main-content -->
 
 
-            <!-- Footer -->
-         <footer class="footer">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-
-            <div class="col-md-6 text-center text-md-left">
-              <small>© TheThemeio 2018, All rights reserved.</small>
-            </div>
-
-            <div class="col-md-6 text-center text-md-right">
-              <div class="social">
-                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </footer><!-- /.footer -->
+  <footer class="footer" id="loadFooter">
+</footer>
+	  
 
 
     <!-- Scripts -->
     <script src="assets/js/page.min.js"></script>
     <script src="assets/js/script.js"></script>
 
+	
+	<div id="loadModals">
+</div>
   </body>
 </html>
